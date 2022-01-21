@@ -1,21 +1,21 @@
 package loopexample;
 
-public class ContinueExample {
+public class DoWhileExample {
 
 	public static void main(String[] args) {
-		int total = 0;
-		int num;
+		int num = 0;
+		int sum = 0;
 		
-		for(num=1;num<=100;num++) {
-			
-			if(num%2==0) {
-				continue;
-			}
-			else {
-				total+=num;
-			}
-		}
-		System.out.println(total);
+		do {
+			sum +=num;
+			num++;
+		} while(num<=10);
+		
+		System.out.println("위 sum의 값은 "+sum+"입니다.");
+
 	}
+	
+	
+	
 
 }

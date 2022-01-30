@@ -80,8 +80,12 @@ BufferedReader 를 쓸 때 우리는 입력 메소드로 readLine() 을 많이 �
 3. BufferedReader 은 스트림에 버퍼를 두어 문자를 버퍼에 일정 정도 저장해둔 뒤 한 번에 보낸다.
   
 <h4>결론적으로 
-  
+![image](https://user-images.githubusercontent.com/86949394/151692072-31e2638f-dc2f-4811-9160-c8c62238b1ad.png)
 
+  
+  ***
+  
+<h4> next() 와 nextLine() 의 차이
   
   
 

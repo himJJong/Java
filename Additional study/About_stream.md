@@ -87,5 +87,23 @@ BufferedReader 를 쓸 때 우리는 입력 메소드로 readLine() 을 많이 �
   
 <h4> next() 와 nextLine() 의 차이
   
+![image](https://user-images.githubusercontent.com/86949394/151692119-a7c4bfe9-f729-44a2-b963-60359ae2e581.pngpek160114_273)
+  
+<h5>여러분들이 문자열을 입력받을 때 가장 주의해야 할 메소드다.
+ 
+일단 next() 는 '한 단어' 그러니까 공백을 기준으로 문장 한 개만 읽어 들인다.
+nextLine() 은 위와 반대로 '한 줄' 즉, 한 줄에 입력된 여러 문장들을 읽는다.
+ 
+예로 들면 아래와 같다.보면 알 수 있듯이 한 줄에 "Cat is perfect animal" 이라고 입력했으나, Cat 만 str 에 담겼다.
+이렇듯이 next() 의 경우 하나의 문장, 즉 앞서 말했던 공백 또는 줄 바꿈까지만 읽는다.
+
+  ***
+  ![image](https://user-images.githubusercontent.com/86949394/151692126-12490a5d-904a-4ce8-9d0b-c089fe40260a.pngpek160114_273)
+<h5>반면에 nextLine() 은 다르다.
+Line 이라는 말 그대로 한 줄을 읽는다. 즉 한 줄 안에 공백 유무와 상관없이 개행(줄 바꿈)까지 읽는다는 것이다.
+  
+  
+
+참고자료 : https://snupi.tistory.com/46,http://www.tcpschool.com/java/java_api_arrays
   
 

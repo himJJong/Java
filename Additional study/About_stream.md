@@ -67,5 +67,21 @@ InputStreamReader 로 char type 으로 처리할 수 있는 장점은 개선되�
  
 BufferedReader 를 쓸 때 우리는 입력 메소드로 readLine() 을 많이 쓴다. 이 메소드는 한 줄 전체를(공백 포함) 읽기 때문에 char 배열을 하나하나 생성할 필요 없이 String 으로 리턴하여 바로 받을 수 있다는 장점이 있다.
   
+![image](https://user-images.githubusercontent.com/86949394/151692032-858cb78d-4224-423b-942a-2588f15d8d33.png)
+
+<h5>그리고 BufferedReader 의 경우 Scanner 와 다르게 문자열 그대로 읽어 들이기 때문에 별다른 정규식을 검사하지 않는다.
+그렇기 때문에 Scanner 에 비해 성능이 좋을 수밖에 없다는 것.
+ 
+즉 스트림 이러한 구성이라고 보면 된다.즉 하나하나 문자를 보내는 것이 아닌 한 번에 모아둔 다음 보내니 훨씬 속도가 빠르고 별다른 정규식을 검사하지 않으니 더더욱 속도는 빠를 수밖에 없다.
+즉, 정리하자면 바이트 단위 [InputStream]로 문자를 입력받아 문자(character) [InputStreamReader]로 처리한 뒤 버퍼(buffer) [BufferedReader]에 담아두었다가 일정 조건이 되면 버퍼를 비우면서 데이터를 보내는
+ 
+1. InputStream 은 바이트 단위로 데이터를 처리한다. 또한 System.in 의 타입도 InputStream 이다.
+2. InputStreamReader 은 문자(character) 단위로 데이터를 처리할 수 있도록 돕는다. InputStream 의 데이터를 문자로 변환하는 중개 역할을 한다.
+3. BufferedReader 은 스트림에 버퍼를 두어 문자를 버퍼에 일정 정도 저장해둔 뒤 한 번에 보낸다.
+  
+<h4>결론적으로 
+  
+
+  
   
 
